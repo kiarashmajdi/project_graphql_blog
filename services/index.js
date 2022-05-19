@@ -5,7 +5,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 export const getPosts = async () => {
   const query = gql`
     query MyQuery {
-      postsConnection {
+      postsConnection(orderBy: createdAt_DESC) {
         edges {
           cursor
           node {
@@ -147,7 +147,7 @@ export const getAdjacentPosts = async (createdAt, slug) => {
 export const getCategoryPost = async (slug) => {
   const query = gql`
     query GetCategoryPost($slug: String!) {
-      postsConnection(where: {categories_some: {slug: $slug}}) {
+      postsConnection(where: {categories_some: {slug: $slug}}, orderBy: createdAt_DESC) {
         edges {
           cursor
           node {
@@ -198,7 +198,7 @@ export const getFeaturedPosts = async () => {
         slug
         createdAt
       }
-    }   
+    }
   `;
 
   const result = await request(graphqlAPI, query);
