@@ -29,7 +29,8 @@ const PostDetail = ({ post }) => {
         return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'image':
         return (
-          <img className="mb-8"
+          <img
+            className="mb-8"
             key={index}
             alt={obj.title}
             height={obj.height}
