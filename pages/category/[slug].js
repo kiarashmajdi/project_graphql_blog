@@ -1,7 +1,6 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import { useRouter } from 'next/router';
-
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader } from '../../components';
 import ContactMe from '../../components/ContactMe';
