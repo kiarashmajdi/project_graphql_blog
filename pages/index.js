@@ -3,7 +3,6 @@ import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
 
-
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
@@ -49,7 +48,6 @@ export default function Home({ posts }) {
             <span className="transition duration-700 align-middle text-white hover:text-pink-600"><Link href="https://linkedin.com/in/kmajdi">linkedin.com/in/kmajdi</Link></span>
           </div>
         </div>
-
       </div>
     </div>
   );
