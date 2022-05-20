@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
-const ContactMe = () => {
-  return (
+const ContactMe = () =>
+  (
     <>
       <div className="bg-black shadow-lg rounded-lg p-8 pb-12 mb-8 mt-8">
         <h1 className="transition duration-700 text-center mb-8 cursor-pointer text-white text-3xl font-semibold">
@@ -35,6 +35,5 @@ const ContactMe = () => {
       </div>
     </>
   );
-};
 
 export default ContactMe;
