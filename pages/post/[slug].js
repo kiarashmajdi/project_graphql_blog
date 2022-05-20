@@ -1,9 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head'
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
+import ContactMe from '../../components/ContactMe';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -14,6 +15,9 @@ const PostDetails = ({ post }) => {
 
   return (
     <>
+      <Head>
+        <title>UTIL Sec | {post.title}</title>
+      </Head>
       <div className="container mx-auto px-10 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="col-span-1 lg:col-span-8">
@@ -30,6 +34,7 @@ const PostDetails = ({ post }) => {
             </div>
           </div>
         </div>
+        <ContactMe />
       </div>
     </>
   );
