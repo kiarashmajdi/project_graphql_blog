@@ -4,3 +4,5 @@ This is a blog I implemented a few years ago using React.js and Next.js as a tut
 
 Now, after two years of studying at the University of Waterloo as a statistics student, I have developed a large interest in data science and machine learning, being the reason for me changing the main function of this blog (but not the name) to a blog where I post my latest activity in my new field of career, machine learning.
 
+Please check out the running website at [util-sec.com](https://util-sec.com/)
+
