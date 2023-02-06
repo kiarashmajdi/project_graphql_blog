@@ -1,4 +1,4 @@
-#UTIL-Sec blog
+# UTIL-Sec blog
 
 This is a blog I implemented a few years ago using React.js and Next.js as a tutorial code-along from a Youtube video created by JS-Mastery. Back then, I was mostly interested in cybersecurity, and that is why I chose the name UTIL-Sec for this blog.
 
